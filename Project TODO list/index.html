@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Todo list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>To Do List</h1>
+        </div>
+    </header>
+
+    <mid>
+        <div id="mid">
+            <input type="text" id="input-box" placeholder="Enter the task">
+            <button id="btn1" onclick="add()" type="submit">ADD</button>
+            <select name="Select" id="select-box">
+                <option value="All">All</option>
+                <option value="Completed">Completed</option>
+                <option value="Incomplete">Incomplete</option>
+            </select>
+        </div>
+    </mid>
+
+    <end>
+        <div id="result">
+            <h3>Tasks</h3>
+            <ul id="list-items">
+                <li>Hello
+                    <button class="btn2">Completed</button>
+                    <button onclick="del(event)" class="btn3">Delete</button>
+                </li>
+            </ul>
+        </div>
+    </end>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
